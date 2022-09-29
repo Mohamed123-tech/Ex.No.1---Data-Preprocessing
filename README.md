@@ -24,14 +24,19 @@ Another aspect is that the data set should be formatted in such a way that more 
 
 
 ##ALGORITHM:
-Importing the libraries
-Importing the dataset
-Taking care of missing data
-Encoding categorical data
-Normalizing the data
-Splitting the data into test and train
+1.Importing the libraries
 
-##PROGRAM:
+2.Importing the dataset
+
+3.Taking care of missing data
+
+4.Encoding categorical data
+
+5.Normalizing the data
+
+6.Splitting the data into test and train
+
+PROGRAM:
 
 
 import pandas as pd
@@ -44,12 +49,14 @@ df
 df.isnull().sum()
 
 #Check for Duplicate Values
+
 df.duplicated()
 
 df.describe()
 
 #Detect the Outliers
 # Outliers are any abnormal values going beyond
+
 df['Exited'].describe()
 
 """ Normalize the data - There are range of values in different columns of x are different. 
@@ -129,8 +136,21 @@ Describing Normalized Data:
 
 X - Values:
 
+![x](https://user-images.githubusercontent.com/84170699/193093641-4afb1906-fd06-4e81-940e-6938cd451ca0.png)
+
+Y - Value:
+![y](https://user-images.githubusercontent.com/84170699/193093728-d4f44ff6-5d77-4499-8854-0341552e95c5.png)
+
+X_train values:
+![x_train](https://user-images.githubusercontent.com/84170699/193093857-0a8f82c7-89ef-4b0d-96e9-226cc31e9877.png)
+
+X_train Size:
 
 
+![x_train_size](https://user-images.githubusercontent.com/84170699/193093944-603601da-9bd7-4f7c-819d-76dcb72f9bcc.png)
+
+train shape:
+![x_train_shape](https://user-images.githubusercontent.com/84170699/193094000-c694e334-e23c-4095-953b-ad69ea0923af.png)
 
 ##RESULT
-/Type your result here/
+Data preprocessing is performed in a data set downloaded from Kaggle
